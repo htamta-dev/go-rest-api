@@ -3,11 +3,11 @@ package middlewares
 import (
 	"net/http"
 
-	"github.com/dev-harshittamta/go-rest-api/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/htamta-dev/go-rest-api/utils"
 )
 
-func Authenticate(context *gin.Context){
+func Authenticate(context *gin.Context) {
 	token := context.Request.Header.Get("Authorization")
 	if token == "" {
 		context.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"message": "Not authorized"})

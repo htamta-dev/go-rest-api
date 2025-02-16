@@ -1,4 +1,4 @@
-module github.com/dev-harshittamta/go-rest-api
+module github.com/htamta-dev/go-rest-api
 
 go 1.23.4
 

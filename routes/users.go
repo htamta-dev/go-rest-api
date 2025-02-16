@@ -3,9 +3,9 @@ package routes
 import (
 	"net/http"
 
-	"github.com/dev-harshittamta/go-rest-api/models"
-	"github.com/dev-harshittamta/go-rest-api/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/htamta-dev/go-rest-api/models"
+	"github.com/htamta-dev/go-rest-api/utils"
 )
 
 func signup(context *gin.Context) {
@@ -39,7 +39,7 @@ func login(context *gin.Context) {
 	token, err := utils.GenerateToken(user.Email, user.ID)
 	if err != nil {
 		context.JSON(http.StatusInternalServerError, gin.H{"message": "Could not generate token!"})
-		return 
+		return
 	}
 	context.JSON(http.StatusOK, gin.H{"message": "Login successful!", "token": token})
 }

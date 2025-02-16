@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/dev-harshittamta/go-rest-api/db"
-	"github.com/dev-harshittamta/go-rest-api/routes"
 	"github.com/gin-gonic/gin"
+	"github.com/htamta-dev/go-rest-api/db"
+	"github.com/htamta-dev/go-rest-api/routes"
 )
 
 func main() {

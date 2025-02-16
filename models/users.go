@@ -3,8 +3,8 @@ package models
 import (
 	"errors"
 
-	"github.com/dev-harshittamta/go-rest-api/db"
-	"github.com/dev-harshittamta/go-rest-api/utils"
+	"github.com/htamta-dev/go-rest-api/db"
+	"github.com/htamta-dev/go-rest-api/utils"
 )
 
 type User struct {

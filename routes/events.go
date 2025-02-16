@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/dev-harshittamta/go-rest-api/models"
 	"github.com/gin-gonic/gin"
+	"github.com/htamta-dev/go-rest-api/models"
 )
 
 func getEvents(context *gin.Context) {
